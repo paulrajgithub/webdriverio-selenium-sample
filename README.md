@@ -12,7 +12,7 @@ WebdriverIO is a custom implementation for selenium's W3C webdriver API. It is w
 
 `$   install node`
 
-To verify the node version (Node version < 15)
+To verify the node version (Node version < 18)
 
 ` $  node -v `
 
@@ -78,7 +78,7 @@ set LT_ACCESS_KEY="YOUR ACCESS KEY"`
 {
   "name": "webdriverio-lambdatest",
   "version": "0.1.0",
-  "readme": "WendriverIO Integration with [LambdaTest](https://www.lambdatest.com)",
+  "readme": "WebdriverIO Integration with [LambdaTest](https://www.lambdatest.com)",
   "description": "Selenium examples for WebdriverIO and LambdaTest Selenium Grid",
   "scripts": {
     "test": "npm run single && npm run parallel && npm run multiple",
@@ -105,15 +105,14 @@ set LT_ACCESS_KEY="YOUR ACCESS KEY"`
   "dependencies": {
     "chai": "*",
     "mocha": "*",
-    "selenium-webdriver": "^4.3.1",
-    "webdriverio": "^8.3.3"
+    "selenium-webdriver": "^4.23.0",
+    "webdriverio": "^9.0.7"
   },
   "devDependencies": {
     "@wdio/cli": "*",
     "@wdio/local-runner": "*",
     "@wdio/mocha-framework": "*",
     "@wdio/sync": "*",
-    "async-request": "^1.2.0",
     "wdio-lambdatest-service": "*"
   }
 }
