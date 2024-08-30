@@ -36,7 +36,7 @@ exports.config = {
     },
     {
       platform: "Windows 10",
-      browserName: "Internet Explorer",
+      browserName: "MicrosoftEdge",
       version: "latest"
     }
   ],
@@ -58,7 +58,7 @@ exports.config = {
 };
 
 // Code to support common capabilities
-exports.config.capabilities.forEach(function(caps) {
+exports.config.capabilities.forEach(function (caps) {
   for (var i in exports.config.commonCapabilities)
     caps[i] = caps[i] || exports.config.commonCapabilities[i];
 });
