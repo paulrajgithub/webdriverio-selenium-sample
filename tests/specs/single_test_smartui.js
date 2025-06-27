@@ -11,6 +11,8 @@ describe('Google Search Function', () => {
     const title = await browser.getTitle();
     await browser.pause(10000);
     assert.equal(title, 'Google');
+
+    //Hook to capture smartui snapshot
     browser.execute(`smartui.takeScreenshot=sample-snapshot`)
   });
 });
