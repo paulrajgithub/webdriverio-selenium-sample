@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm run single && npm run parallel && npm run multiple",
     "single": "./node_modules/.bin/wdio conf/single.conf.js",
+    "singleSmartUI": "./node_modules/.bin/wdio conf/singleSmartUI.conf.js",
     "parallel": "./node_modules/.bin/wdio conf/parallel.conf.js",
     "multiple": "./node_modules/.bin/wdio conf/multiple.conf.js",
     "integration": "./node_modules/.bin/wdio conf/integration.conf.js"
